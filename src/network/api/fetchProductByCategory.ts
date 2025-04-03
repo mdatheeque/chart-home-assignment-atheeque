@@ -3,8 +3,9 @@ import { Product } from "../../model/product-modal";
 export const fetchProductByCategory = async (
   category: string
 ): Promise<Product[]> => {
+  let trimmedCategory = category.replace(" ", "");
   const response = await fetch(
-    `https://dummyjson.com/products/category/${category.trim()}`
+    `https://dummyjson.com/products/category/${trimmedCategory}`
   );
   const jsonResp = await response.json();
   let tempArr: Product[] = [];
