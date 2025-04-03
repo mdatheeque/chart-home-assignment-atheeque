@@ -1,0 +1,6 @@
+export const ADD_CATEGORY = "ADD_CATEGORY";
+export const ADD_PRODUCT = "ADD_PRODUCT";
+export const CLEAR_FILTER = "CLEAR_FILTER";
+export const RUN_REPORT = "RUN_REPORT";
+export const ADD_SELECTED_PRODUCT = "ADD_SELECTED_PRODUCT";
+export const SHOW_CHART = "SHOW_CHART";
