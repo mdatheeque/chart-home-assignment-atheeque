@@ -4,7 +4,7 @@ export const fetchProductByCategory = async (
   category: string
 ): Promise<Product[]> => {
   const response = await fetch(
-    `https://dummyjson.com/products/category/${category}`
+    `https://dummyjson.com/products/category/${category.trim()}`
   );
   const jsonResp = await response.json();
   let tempArr: Product[] = [];
